@@ -1,4 +1,4 @@
-FROM php:7-apache
+FROM php:8-apache
 COPY config/php.ini /usr/local/etc/php/
 
 RUN a2enmod rewrite
