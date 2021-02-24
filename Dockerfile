@@ -8,4 +8,4 @@ RUN apt-get update \
 
 RUN docker-php-ext-install -j$(nproc) opcache
 
-RUN pecl install apcu-beta && echo extension=apcu.so > /usr/local/etc/php/conf.d/apcu.ini
+RUN pecl install apcu
